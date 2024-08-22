@@ -96,6 +96,8 @@ li {
 .flex__text {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .flex__text h1,
 p,
@@ -136,7 +138,7 @@ button {
   background-color: #fff;
   border: none;
   margin-top: 40px;
-  margin-left: 623px;
+
   padding-right: 7px;
   padding-left: 0px;
   cursor: pointer;
@@ -264,7 +266,7 @@ button {
 /********************************************************** teh ****************************************************/
 
 .teh {
-  height: 439px;
+  height: auto;
 }
 .h2__teh {
   color: #000;
@@ -427,7 +429,7 @@ button {
 .img__section4 {
 }
 
-/********************************************************** sestion4 ****************************************************/
+/********************************************************** sestion5 ****************************************************/
 
 .section5 {
   height: 500px;
@@ -502,7 +504,8 @@ button {
   margin-bottom: 24px;
   letter-spacing: 1.3px;
 }
-/*  */
+/********************************************************** footer ****************************************************/
+
 footer {
   background-color: #fafafa;
   height: 245px;
@@ -539,4 +542,250 @@ footer {
   margin: 0;
   padding-top: 45px;
   padding-left: 30px;
+}
+
+/********************************************************** media ****************************************************/
+
+@media screen and (max-width: 322px) {
+  .nav__list {
+    flex-direction: column;
+  }
+  .img__easy {
+    max-width: 100%;
+    height: auto;
+  }
+  .p__section4 {
+    width: auto;
+  }
+  .h2__section4 {
+    font-size: 30px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+  .flex__header,
+  .flex__easy,
+  .flex__section4,
+  .flex__section5 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .name,
+  .tel {
+    width: auto;
+  }
+  .p__section5 {
+    width: 494px;
+  }
+  .grid__teh {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teh {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .flex__text p {
+    width: auto;
+  }
+  .flex__text h1 {
+    font-size: 50px;
+  }
+  .p__section5 {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .h2__section4 {
+    text-align: center;
+  }
+  .text__footer {
+    margin-left: 0px;
+  }
+  .grid__posobilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex__header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ico {
+    margin-left: 0px;
+  }
+  .nav__list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .grid__posobilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex__easy {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .easy {
+    margin-bottom: 250px;
+  }
+  .p__section4 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .ico__flex {
+    justify-content: center;
+  }
+
+  .grid__teh {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .teh {
+    margin-bottom: 250px;
+  }
+
+  .button__header {
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+  .nav__list {
+    flex-direction: row;
+  }
+  .flex__header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ico {
+    margin-left: 0;
+  }
+  .posobilities {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .flex__section4 {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 0;
+    gap: 20px;
+
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .nav__list {
+    flex-direction: row;
+  }
+  .section4 {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .grid__teh {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img__section4,
+  .img__easy {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .teh {
+    margin-bottom: 200px;
+  }
+  .img-teh,
+  .teh-item,
+  .h4-teh,
+  .p-teh,
+  .text-flex__teh {
+    padding-left: 0px;
+    padding-right: 0;
+  }
+
+  .button__header {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .flex__section5 {
+    display: flex;
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding-top: 50px;
+  }
+  .form__section5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 20px;  */
+  }
+
+  .button__section5 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрирует текст внутри кнопки */
+  }
+  .p__section5 {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .h2__section5 {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .grid__posobilities {
+    margin-left: 0px;
+    margin-right: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 164px;
+  }
+  .flex__easy {
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 50px;
+  }
+  .teh {
+    margin-top: 300px;
+  }
+  .flex__section4 {
+    gap: 50px;
+  }
+  .img__easy {
+    max-width: 100%;
+    height: auto;
+  }
+  .left {
+    width: 445px;
+    height: 115px;
+  }
+  .flex__easy {
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 50px;
+    justify-content: space-evenly;
+  }
 }
