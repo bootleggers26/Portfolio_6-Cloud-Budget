@@ -261,6 +261,7 @@ header .menu-modal li,
   grid-template-columns: repeat(3, 1fr);
   margin-left: 149px;
   margin-right: 112px;
+  gap: 20px;
 }
 .img-posobilities {
   max-width: 350px;
